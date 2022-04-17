@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     defaultAxios
       .get({
-        url: "http://localhost:8080/test",
+        url: "/test",
       })
       .then(({ data }) => setTest(data));
   }, []);
